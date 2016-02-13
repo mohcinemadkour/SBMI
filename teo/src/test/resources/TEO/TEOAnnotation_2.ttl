@@ -1,0 +1,185 @@
+@prefix : <http://www.cse.lehigh.edu/~yil712/TEO/annotation_2.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.cse.lehigh.edu/~yil712/TEO/annotation_2.owl> .
+
+<http://www.cse.lehigh.edu/~yil712/TEO/annotation_2.owl> rdf:type owl:Ontology ;
+                                                         
+                                                         owl:imports <file:///Users/jdu2/Documents/workspace/teo/target/test-classes/TEO/TEO_1.0.9.owl> .
+
+
+#################################################################
+#
+#    Individuals
+#
+#################################################################
+
+
+###  http://www.cse.lehigh.edu/~yil712/TEO/annotation_2.owl#Duration1
+
+:Duration1 rdf:type <http://informatics.mayo.edu/TEO.owl#TEO_0000032> ,
+                    owl:NamedIndividual ;
+           
+           <http://informatics.mayo.edu/TEO.owl#TEO_0000144> "1Y5M10D" .
+
+
+
+###  http://www.cse.lehigh.edu/~yil712/TEO/annotation_2.owl#Duration2
+
+:Duration2 rdf:type <http://informatics.mayo.edu/TEO.owl#TEO_0000032> ,
+                    owl:NamedIndividual ;
+           
+           <http://informatics.mayo.edu/TEO.owl#TEO_0000144> "3Y" .
+
+
+
+###  http://www.cse.lehigh.edu/~yil712/TEO/annotation_2.owl#Event1
+
+:Event1 rdf:type <http://informatics.mayo.edu/TEO.owl#TEO_0000025> ,
+                 owl:NamedIndividual ;
+        
+        rdfs:label "event 1 instant" ;
+        
+        <http://informatics.mayo.edu/TEO.owl#TEO_0000007> :TimeInstant2 .
+
+
+
+###  http://www.cse.lehigh.edu/~yil712/TEO/annotation_2.owl#Event2
+
+:Event2 rdf:type <http://informatics.mayo.edu/TEO.owl#TEO_0000025> ,
+                 owl:NamedIndividual ;
+        
+        rdfs:label "event 2 instant"@en ;
+        
+        <http://informatics.mayo.edu/TEO.owl#TEO_0000007> :TimeInstant1 .
+
+
+
+###  http://www.cse.lehigh.edu/~yil712/TEO/annotation_2.owl#Event3
+
+:Event3 rdf:type <http://informatics.mayo.edu/TEO.owl#TEO_0000025> ,
+                 owl:NamedIndividual ;
+        
+        rdfs:label "event 3 interval" ;
+        
+        <http://informatics.mayo.edu/TEO.owl#TEO_0000007> :TimeInterval1 .
+
+
+
+###  http://www.cse.lehigh.edu/~yil712/TEO/annotation_2.owl#Event4
+
+:Event4 rdf:type <http://informatics.mayo.edu/TEO.owl#TEO_0000025> ,
+                 owl:NamedIndividual ;
+        
+        rdfs:label "event 4 interval" ;
+        
+        <http://informatics.mayo.edu/TEO.owl#TEO_0000007> :TimeInterval2 .
+
+
+
+###  http://www.cse.lehigh.edu/~yil712/TEO/annotation_2.owl#Event5
+
+:Event5 rdf:type <http://informatics.mayo.edu/TEO.owl#TEO_0000025> ,
+                 owl:NamedIndividual ;
+        
+        rdfs:label "event 5 interval" ;
+        
+        <http://informatics.mayo.edu/TEO.owl#TEO_0000007> :TimeInterval3 .
+
+
+
+###  http://www.cse.lehigh.edu/~yil712/TEO/annotation_2.owl#TimeInstant1
+
+:TimeInstant1 rdf:type <http://www.ifomis.org/bfo/1.1/span#TemporalInstant> ,
+                       owl:NamedIndividual ;
+              
+              rdfs:label "10am 5/20/2010"@en .
+
+
+
+###  http://www.cse.lehigh.edu/~yil712/TEO/annotation_2.owl#TimeInstant2
+
+:TimeInstant2 rdf:type <http://www.ifomis.org/bfo/1.1/span#TemporalInstant> ,
+                       owl:NamedIndividual ;
+              
+              rdfs:label "10:30:45 5/15/2009"@en .
+
+
+
+###  http://www.cse.lehigh.edu/~yil712/TEO/annotation_2.owl#TimeInstant3
+
+:TimeInstant3 rdf:type <http://www.ifomis.org/bfo/1.1/span#TemporalInstant> ,
+                       owl:NamedIndividual ;
+              
+              rdfs:label "10:30:00 6/15/2014" .
+
+
+
+###  http://www.cse.lehigh.edu/~yil712/TEO/annotation_2.owl#TimeInstant4
+
+:TimeInstant4 rdf:type <http://www.ifomis.org/bfo/1.1/span#TemporalInstant> ,
+                       owl:NamedIndividual ;
+              
+              rdfs:label "August 20 2014" .
+
+
+
+###  http://www.cse.lehigh.edu/~yil712/TEO/annotation_2.owl#TimeInstant5
+
+:TimeInstant5 rdf:type <http://www.ifomis.org/bfo/1.1/span#TemporalInstant> ,
+                       owl:NamedIndividual ;
+              
+              rdfs:label "Sept 1 2008" .
+
+
+
+###  http://www.cse.lehigh.edu/~yil712/TEO/annotation_2.owl#TimeInstant6
+
+:TimeInstant6 rdf:type <http://www.ifomis.org/bfo/1.1/span#TemporalInstant> ,
+                       owl:NamedIndividual ;
+              
+              rdfs:label "July 1 2012" .
+
+
+
+###  http://www.cse.lehigh.edu/~yil712/TEO/annotation_2.owl#TimeInterval1
+
+:TimeInterval1 rdf:type <http://www.ifomis.org/bfo/1.1/span#TemporalInterval> ,
+                        owl:NamedIndividual ;
+               
+               <http://informatics.mayo.edu/TEO.owl#TEO_0000022> :Duration1 ;
+               
+               <http://informatics.mayo.edu/TEO.owl#TEO_0000028> :TimeInstant1 .
+
+
+
+###  http://www.cse.lehigh.edu/~yil712/TEO/annotation_2.owl#TimeInterval2
+
+:TimeInterval2 rdf:type <http://www.ifomis.org/bfo/1.1/span#TemporalInterval> ,
+                        owl:NamedIndividual ;
+               
+               <http://informatics.mayo.edu/TEO.owl#TEO_0000028> :TimeInstant3 ;
+               
+               <http://informatics.mayo.edu/TEO.owl#TEO_0000006> :TimeInstant4 .
+
+
+
+###  http://www.cse.lehigh.edu/~yil712/TEO/annotation_2.owl#TimeInterval3
+
+:TimeInterval3 rdf:type <http://www.ifomis.org/bfo/1.1/span#TemporalInterval> ,
+                        owl:NamedIndividual ;
+               
+               <http://informatics.mayo.edu/TEO.owl#TEO_0000022> :Duration2 ;
+               
+               <http://informatics.mayo.edu/TEO.owl#TEO_0000028> :TimeInstant5 ;
+               
+               <http://informatics.mayo.edu/TEO.owl#TEO_0000006> :TimeInstant6 .
+
+
+
+
+###  Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net
+

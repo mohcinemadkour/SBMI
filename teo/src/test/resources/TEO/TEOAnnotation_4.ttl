@@ -1,0 +1,115 @@
+@prefix : <http://www.cse.lehigh.edu/~yil712/TEO/annotation_2.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.cse.lehigh.edu/~yil712/TEO/annotation_4.owl> .
+
+<http://www.cse.lehigh.edu/~yil712/TEO/annotation_4.owl> rdf:type owl:Ontology ;
+                                                         
+                                                         owl:imports <http://www.cse.lehigh.edu/~yil712/TEO/TEO_1.1.0.owl> .
+
+
+#################################################################
+#
+#    Annotation properties
+#
+#################################################################
+
+
+###  http://informatics.mayo.edu/TEO.owl#hasTimeOffset
+
+<http://informatics.mayo.edu/TEO.owl#hasTimeOffset> rdfs:range xsd:int .
+
+
+
+
+
+#################################################################
+#
+#    Individuals
+#
+#################################################################
+
+
+###  http://www.cse.lehigh.edu/~yil712/TEO/annotation_4.owl#Event0
+
+<http://www.cse.lehigh.edu/~yil712/TEO/annotation_4.owl#Event0> rdf:type <http://informatics.mayo.edu/TEO.owl#TEO_0000025> ,
+                                                                         owl:NamedIndividual ;
+                                                                
+                                                                rdfs:label "event 0" ;
+                                                                
+                                                                <http://informatics.mayo.edu/TEO.owl#TEO_0000020> <http://www.cse.lehigh.edu/~yil712/TEO/annotation_4.owl#Event1> .
+
+
+
+###  http://www.cse.lehigh.edu/~yil712/TEO/annotation_4.owl#Event1
+
+<http://www.cse.lehigh.edu/~yil712/TEO/annotation_4.owl#Event1> rdf:type <http://informatics.mayo.edu/TEO.owl#TEO_0000025> ,
+                                                                         owl:NamedIndividual ;
+                                                                
+                                                                rdfs:label "event 1" ;
+                                                                
+                                                                <http://informatics.mayo.edu/TEO.owl#TEO_0000010> <http://www.cse.lehigh.edu/~yil712/TEO/annotation_4.owl#Event2> .
+
+
+
+###  http://www.cse.lehigh.edu/~yil712/TEO/annotation_4.owl#Event2
+
+<http://www.cse.lehigh.edu/~yil712/TEO/annotation_4.owl#Event2> rdf:type <http://informatics.mayo.edu/TEO.owl#TEO_0000025> ,
+                                                                         owl:NamedIndividual ;
+                                                                
+                                                                rdfs:label "event 2"@en ;
+                                                                
+                                                                <http://informatics.mayo.edu/TEO.owl#TEO_0000002> <http://www.cse.lehigh.edu/~yil712/TEO/annotation_4.owl#Event3> .
+
+
+
+###  http://www.cse.lehigh.edu/~yil712/TEO/annotation_4.owl#Event3
+
+<http://www.cse.lehigh.edu/~yil712/TEO/annotation_4.owl#Event3> rdf:type <http://informatics.mayo.edu/TEO.owl#TEO_0000025> ,
+                                                                         owl:NamedIndividual ;
+                                                                
+                                                                rdfs:label "event 3" ;
+                                                                
+                                                                <http://informatics.mayo.edu/TEO.owl#TEO_0000037> <http://www.cse.lehigh.edu/~yil712/TEO/annotation_4.owl#Event1> .
+
+
+
+###  http://www.cse.lehigh.edu/~yil712/TEO/annotation_4.owl#Event4
+
+<http://www.cse.lehigh.edu/~yil712/TEO/annotation_4.owl#Event4> rdf:type <http://informatics.mayo.edu/TEO.owl#TEO_0000025> ,
+                                                                         owl:NamedIndividual ;
+                                                                
+                                                                rdfs:label "event 4" ;
+                                                                
+                                                                <http://informatics.mayo.edu/TEO.owl#TEO_0000152> <http://www.cse.lehigh.edu/~yil712/TEO/annotation_4.owl#Event3> .
+
+
+
+###  http://www.cse.lehigh.edu/~yil712/TEO/annotation_4.owl#Event5
+
+<http://www.cse.lehigh.edu/~yil712/TEO/annotation_4.owl#Event5> rdf:type <http://informatics.mayo.edu/TEO.owl#TEO_0000025> ,
+                                                                         owl:NamedIndividual ;
+                                                                
+                                                                rdfs:label "event 5" ;
+                                                                
+                                                                <http://informatics.mayo.edu/TEO.owl#TEO_0000010> <http://www.cse.lehigh.edu/~yil712/TEO/annotation_4.owl#Event0> .
+
+
+
+###  http://www.cse.lehigh.edu/~yil712/TEO/annotation_4.owl#Event6
+
+<http://www.cse.lehigh.edu/~yil712/TEO/annotation_4.owl#Event6> rdf:type <http://informatics.mayo.edu/TEO.owl#TEO_0000025> ,
+                                                                         owl:NamedIndividual ;
+                                                                
+                                                                rdfs:label "event 6" ;
+                                                                
+                                                                <http://informatics.mayo.edu/TEO.owl#TEO_0000014> <http://www.cse.lehigh.edu/~yil712/TEO/annotation_4.owl#Event1> .
+
+
+
+
+###  Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net
+

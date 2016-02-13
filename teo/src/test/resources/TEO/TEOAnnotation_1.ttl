@@ -1,0 +1,122 @@
+@prefix : <http://www.cse.lehigh.edu/~yil712/TEO/annotation_1.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.cse.lehigh.edu/~yil712/TEO/annotation_1.owl> .
+
+<http://www.cse.lehigh.edu/~yil712/TEO/annotation_1.owl> rdf:type owl:Ontology ;
+                                                         
+                                                         owl:imports <http://www.cse.lehigh.edu/~yil712/TEO/TEO_1.0.8.owl> .
+
+
+#################################################################
+#
+#    Individuals
+#
+#################################################################
+
+
+###  http://www.cse.lehigh.edu/~yil712/TEO/annotation_1.owl#ER_Admission1
+
+:ER_Admission1 rdf:type <http://informatics.mayo.edu/TEO.owl#TEO_0000025> ,
+                        owl:NamedIndividual ;
+               
+               rdfs:label "PATIENT PRESENTED"@en .
+
+
+
+###  http://www.cse.lehigh.edu/~yil712/TEO/annotation_1.owl#EndAntiplateletTherapy1
+
+:EndAntiplateletTherapy1 rdf:type <http://informatics.mayo.edu/TEO.owl#TEO_0000025> ,
+                                  owl:NamedIndividual ;
+                         
+                         rdfs:label "PATIENT HAD NOT BEEN TAKING PRESCRIBED MEDICATIONS FOR A SIGNIFICANT PERIOD OF TIME"@en ;
+                         
+                         <http://informatics.mayo.edu/TEO.owl#TEO_0000002> :Late_Stent_Thrombosis1 .
+
+
+
+###  http://www.cse.lehigh.edu/~yil712/TEO/annotation_1.owl#InitialDrugElustingStentImplantation1
+
+:InitialDrugElustingStentImplantation1 rdf:type <http://informatics.mayo.edu/TEO.owl#TEO_0000025> ,
+                                                owl:NamedIndividual ;
+                                       
+                                       rdfs:label "A 2.75X12MM TAXUS EXPRESS2 STENT WAS DEPLOYED IN THE RV BRANCH"@en ;
+                                       
+                                       <http://informatics.mayo.edu/TEO.owl#TEO_0000002> :EndAntiplateletTherapy1 ;
+                                       
+                                       <http://informatics.mayo.edu/TEO.owl#TEO_0000018> :InitialDrugElutingStentImplantation2 ;
+                                       
+                                       <http://informatics.mayo.edu/TEO.owl#TEO_0000002> :Late_Stent_Thrombosis1 ;
+                                       
+                                       <http://informatics.mayo.edu/TEO.owl#TEO_0000007> :TimeInstant1 .
+
+
+
+###  http://www.cse.lehigh.edu/~yil712/TEO/annotation_1.owl#InitialDrugElutingStentImplantation2
+
+:InitialDrugElutingStentImplantation2 rdf:type <http://informatics.mayo.edu/TEO.owl#TEO_0000025> ,
+                                               owl:NamedIndividual ;
+                                      
+                                      rdfs:label "A 2.75X16MM TAXUS EXPRESS2 STENT WAS DEPLOYED IN THE RCA"@en .
+
+
+
+###  http://www.cse.lehigh.edu/~yil712/TEO/annotation_1.owl#Late_Stent_Thrombosis1
+
+:Late_Stent_Thrombosis1 rdf:type <http://informatics.mayo.edu/TEO.owl#TEO_0000025> ,
+                                 owl:NamedIndividual ;
+                        
+                        rdfs:label "THE RCA AND LCX WERE FOUND TO BE OCCLUDED WITH THROMBUS"@en ;
+                        
+                        <http://informatics.mayo.edu/TEO.owl#TEO_0000002> :ER_Admission1 ;
+                        
+                        <http://informatics.mayo.edu/TEO.owl#TEO_0000007> :TimeInstant2 .
+
+
+
+###  http://www.cse.lehigh.edu/~yil712/TEO/annotation_1.owl#StartAntiplateletTherapy1
+
+:StartAntiplateletTherapy1 rdf:type <http://informatics.mayo.edu/TEO.owl#TEO_0000025> ,
+                                    owl:NamedIndividual ;
+                           
+                           rdfs:label "THE PATIENT WAS TAKING PLAVIX"@en ;
+                           
+                           <http://informatics.mayo.edu/TEO.owl#TEO_0000002> :InitialDrugElustingStentImplantation1 .
+
+
+
+###  http://www.cse.lehigh.edu/~yil712/TEO/annotation_1.owl#StartAntiplateletTherapy2
+
+:StartAntiplateletTherapy2 rdf:type <http://informatics.mayo.edu/TEO.owl#TEO_0000025> ,
+                                    owl:NamedIndividual ;
+                           
+                           rdfs:label "PATIENT RECEIVED HEPARIN AND INTEGRILIN DURING THE PROCEDURE AND PLAVIX AND ASPIRIN POST-PROCEDURE"@en ;
+                           
+                           <http://informatics.mayo.edu/TEO.owl#TEO_0000014> :ER_Admission1 .
+
+
+
+###  http://www.cse.lehigh.edu/~yil712/TEO/annotation_1.owl#TimeInstant1
+
+:TimeInstant1 rdf:type <http://www.ifomis.org/bfo/1.1/span#TemporalInstant> ,
+                       owl:NamedIndividual ;
+              
+              rdfs:label "2006"@en .
+
+
+
+###  http://www.cse.lehigh.edu/~yil712/TEO/annotation_1.owl#TimeInstant2
+
+:TimeInstant2 rdf:type <http://www.ifomis.org/bfo/1.1/span#TemporalInstant> ,
+                       owl:NamedIndividual ;
+              
+              rdfs:label "2010"@en .
+
+
+
+
+###  Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net
+

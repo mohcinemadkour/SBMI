@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY TEO "http://informatics.mayo.edu/TEO.owl#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://informatics.mayo.edu/demo/semantatorannotation#"
+     xml:base="http://informatics.mayo.edu/demo/semantatorannotation"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:TEO="http://informatics.mayo.edu/TEO.owl#">
+    <owl:Ontology rdf:about="http://informatics.mayo.edu/demo/semantatorannotation">
+        <rdfs:comment xml:lang="en">Semantator Annotations</rdfs:comment>
+        <owl:imports rdf:resource="file:/Users/jdu2/Documents/workspace/teo/demo/TEO_1.1.1.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://informatics.mayo.edu/demo/semantatorannotation#TEO_00000252 -->
+
+    <owl:NamedIndividual rdf:about="http://informatics.mayo.edu/demo/semantatorannotation#TEO_00000252">
+        <rdf:type rdf:resource="&TEO;TEO_0000025"/>
+        <rdfs:label xml:lang="en">monitor patient’s heart rate</rdfs:label>
+        <TEO:TEO_0000007 rdf:resource="http://informatics.mayo.edu/demo/semantatorannotation#TemporalInterval1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatics.mayo.edu/demo/semantatorannotation#TEO_00000253 -->
+
+    <owl:NamedIndividual rdf:about="http://informatics.mayo.edu/demo/semantatorannotation#TEO_00000253">
+        <rdf:type rdf:resource="&TEO;TEO_0000025"/>
+        <rdfs:label xml:lang="en">patient’s bilirubin is elevated </rdfs:label>
+        <TEO:TEO_0000016 rdf:resource="http://informatics.mayo.edu/demo/semantatorannotation#TEO_00000254"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedProperty rdf:resource="&TEO;TEO_0000016"/>
+        <owl:annotatedSource rdf:resource="http://informatics.mayo.edu/demo/semantatorannotation#TEO_00000253"/>
+        <owl:annotatedTarget rdf:resource="http://informatics.mayo.edu/demo/semantatorannotation#TEO_00000254"/>
+        <TEO:hasTimeOffset rdf:resource="http://informatics.mayo.edu/demo/semantatorannotation#TEO_00000322"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://informatics.mayo.edu/demo/semantatorannotation#TEO_00000254 -->
+
+    <owl:NamedIndividual rdf:about="http://informatics.mayo.edu/demo/semantatorannotation#TEO_00000254">
+        <rdf:type rdf:resource="&TEO;TEO_0000025"/>
+        <rdfs:label xml:lang="en">the second cycle of chemotherapy</rdfs:label>
+        <TEO:TEO_0000007 rdf:resource="http://informatics.mayo.edu/demo/semantatorannotation#TemporalInstant1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatics.mayo.edu/demo/semantatorannotation#TEO_00000321 -->
+
+    <owl:NamedIndividual rdf:about="http://informatics.mayo.edu/demo/semantatorannotation#TEO_00000321">
+        <rdf:type rdf:resource="&TEO;TEO_0000032"/>
+        <rdfs:label xml:lang="en">72 hours </rdfs:label>
+        <TEO:TEO_0000144>72H</TEO:TEO_0000144>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatics.mayo.edu/demo/semantatorannotation#TEO_00000322 -->
+
+    <owl:NamedIndividual rdf:about="http://informatics.mayo.edu/demo/semantatorannotation#TEO_00000322">
+        <rdf:type rdf:resource="&TEO;TEO_0000032"/>
+        <rdfs:label xml:lang="en">2 weeks</rdfs:label>
+        <TEO:TEO_0000144>2W</TEO:TEO_0000144>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatics.mayo.edu/demo/semantatorannotation#TemporalInstant1 -->
+
+    <owl:NamedIndividual rdf:about="http://informatics.mayo.edu/demo/semantatorannotation#TemporalInstant1">
+        <rdf:type rdf:resource="http://www.ifomis.org/bfo/1.1/span#TemporalInstant"/>
+        <rdfs:label xml:lang="en">June 10, 2004</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatics.mayo.edu/demo/semantatorannotation#TemporalInstant2 -->
+
+    <owl:NamedIndividual rdf:about="http://informatics.mayo.edu/demo/semantatorannotation#TemporalInstant2">
+        <rdf:type rdf:resource="http://www.ifomis.org/bfo/1.1/span#TemporalInstant"/>
+        <rdfs:label xml:lang="en">2004-06-01</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatics.mayo.edu/demo/semantatorannotation#TemporalInterval1 -->
+
+    <owl:NamedIndividual rdf:about="http://informatics.mayo.edu/demo/semantatorannotation#TemporalInterval1">
+        <rdf:type rdf:resource="http://www.ifomis.org/bfo/1.1/span#TemporalInterval"/>
+        <TEO:TEO_0000022 rdf:resource="http://informatics.mayo.edu/demo/semantatorannotation#TEO_00000321"/>
+        <TEO:TEO_0000028 rdf:resource="http://informatics.mayo.edu/demo/semantatorannotation#TemporalInstant2"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1433532900508" name="http://informatics.mayo.edu/TEO.owl" uri="TEO_1.1.1.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1433532900508" name="http://informatics.mayo.edu/demo/semantatorannotation" uri="teo/demo/semantatorannotations/demo.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1433532900508" name="shadowed:http://informatics.mayo.edu/TEO.owl" uri="teo/bin/test/resources/TEO/TEO_1.0.8.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1433532900508" name="shadowed:http://informatics.mayo.edu/TEO.owl" uri="teo/bin/test/resources/TEO/TEO_1.0.9.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1433532900508" name="shadowed:http://informatics.mayo.edu/TEO.owl" uri="teo/bin/test/resources/TEO/TEO_1.1.0.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1433532900508" name="shadowed:http://informatics.mayo.edu/TEO.owl" uri="teo/bin/test/resources/TEO/TEO_1.1.1.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1433532900508" name="shadowed:http://informatics.mayo.edu/TEO.owl" uri="teo/demo/TEO_1.1.0.owl.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1433532900508" name="shadowed:http://informatics.mayo.edu/TEO.owl" uri="teo/demo/TEO_1.1.1.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1433532900508" name="shadowed:http://informatics.mayo.edu/TEO.owl" uri="teo/target/test-classes/TEO/TEO_1.0.8.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1433532900508" name="shadowed:http://informatics.mayo.edu/TEO.owl" uri="teo/target/test-classes/TEO/TEO_1.0.9.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1433532900508" name="shadowed:http://informatics.mayo.edu/TEO.owl" uri="teo/target/test-classes/TEO/TEO_1.1.0.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1433532900508" name="shadowed:http://informatics.mayo.edu/TEO.owl" uri="teo/target/test-classes/TEO/TEO_1.1.1.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1433532900508" name="shadowed:http://informatics.mayo.edu/TEO.owl" uri="teo/src/test/resources/TEO/TEO_1.0.8.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1433532900508" name="shadowed:http://informatics.mayo.edu/TEO.owl" uri="teo/src/test/resources/TEO/TEO_1.0.9.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1433532900508" name="shadowed:http://informatics.mayo.edu/TEO.owl" uri="teo/src/test/resources/TEO/TEO_1.1.0.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1433532900508" name="shadowed:http://informatics.mayo.edu/TEO.owl" uri="teo/src/test/resources/TEO/TEO_1.1.1.owl"/>
+    </group>
+</catalog>
